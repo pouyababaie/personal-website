@@ -7,7 +7,7 @@
     "build": {
       "executor": "@nx/vite:build",
       "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
+      "defaultConfiguration": "development",
       "options": {
         "outputPath": "dist/personal-website"
       },
@@ -24,7 +24,8 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "personal-website:build"
+        "buildTarget": "personal-website:build",
+        "proxyConfig": "./proxy.conf.json"
       },
       "configurations": {
         "development": {

@@ -1,25 +1,32 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {},
     "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "types": ["vite/client", "vitest"]
+    "types": [
+      "vite/client",
+      "vitest"
+    ],
+    "paths": {
+      "@react-app/*": [
+        "react/src/app/*"
+      ],
+      "@react-lib/*": [
+        "react/src/modules/shared/*"
+      ],
+      "@nest-app/*": [
+        "nest/nest-app/src/*"
+      ],
+      "@nest-lib/shared": [
+        "libs/shared/src"
+      ],
+      "@nest-lib/shared/*": [
+        "libs/shared/src/*"
+      ]
+    },
+    "baseUrl": "./"
   },
   "files": [],
   "include": [],
@@ -31,6 +38,5 @@
       "path": "./tsconfig.spec.json"
     }
   ],
-  "compileOnSave": false,
-  "exclude": ["node_modules", "tmp"]
+  "extends": "./tsconfig.base.json"
 }
