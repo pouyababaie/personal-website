@@ -3,11 +3,6 @@
 **Software Developer**  
 Tehran, Iran  
 
-### Waiter / Barista
-
-
-## Education
-
 **Bachelor of Computer Science**  
 <br/>
 
