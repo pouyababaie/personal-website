@@ -145,6 +145,11 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: 15px;
+        
+      }
+
+      .project-item li a{
+        color: #667eea;
       }
 
       .education-title,
@@ -171,6 +176,22 @@
           flex-direction: column;
           gap: 10px;
         }
+
+        .project-item {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+        }
+        .project-item li{
+            text-align: center;
+            /* width: 100%; */
+            list-style: none;
+            margin-inline: 0.5rem;
+            
+        }
+        .seperator {
+            display: none;
+        }
       }
     </style>
   </head>
@@ -181,11 +202,11 @@
         <div class="title">Software Engineer</div>
         <div class="contact">
           <a href="mailto:pouyababaie123@gmail.com">pouyababaie123@gmail.com</a>
-          <span>|</span>
+          <span class="seperator">|</span>
           <!-- <span>+(98) 930 4961 630</span>
           <span>|</span> -->
           <span>Tehran, Iran</span>
-          <span>|</span>
+          <span class="seperator">|</span>
           <a href="https://github.com/pouyababaie" target="_blank">Github</a>
         </div>
       </div>
