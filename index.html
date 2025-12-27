@@ -1,44 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    # Pouya Babaie
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahdi Beyg Babaei - Resume</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-**Software Developer**  
-Tehran, Iran  
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f5f5f5;
+        padding: 20px;
+      }
 
-**Bachelor of Computer Science**  
-<br/>
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
 
-## Skills
+      .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
 
-- Angular
-- Blazor
-- .NET MAUI
-- TypeScript
-- C#
-- Containerization
-- Linux
-- FOSS
-- Design Systems
+      .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 5px;
+        font-weight: 300;
+      }
 
----
+      .header .title {
+        font-size: 1.2em;
+        opacity: 0.9;
+        margin-bottom: 20px;
+      }
 
-## Links
+      .contact {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 0.9em;
+      }
 
-- https://angular.dev/
-- https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor
-- https://dotnet.microsoft.com/en-us/apps/maui
-- https://abp.io/
-- https://x.leptontheme.com/
-- https://www.telerik.com/
-- https://lima.ir/
-- https://aban.capital/
-- https://aban.net/
+      .contact a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.9;
+      }
 
-</body>
+      .contact a:hover {
+        opacity: 1;
+      }
+
+      .content {
+        padding: 40px;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .section h2 {
+        color: #667eea;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #667eea;
+      }
+
+      .summary {
+        font-size: 1.05em;
+        line-height: 1.8;
+        color: #555;
+      }
+
+      .job {
+        margin-bottom: 25px;
+      }
+
+      .job-header {
+        margin-bottom: 10px;
+      }
+
+      .job-title {
+        font-weight: 600;
+        font-size: 1.1em;
+        color: #333;
+      }
+
+      .job-company {
+        color: #667eea;
+        font-weight: 500;
+      }
+
+      .job-date {
+        color: #888;
+        font-size: 0.9em;
+        font-style: italic;
+      }
+
+      .job-description {
+        margin-top: 8px;
+        color: #555;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+      }
+
+      .skill {
+        background: #f0f0f0;
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 0.95em;
+        transition: all 0.3s;
+      }
+
+      .skill:hover {
+        background: #667eea;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      /* .education-item, */
+      .project-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .education-title,
+      .project-name {
+        font-weight: 600;
+        color: #333;
+      }
+
+      .education-subtitle {
+        color: #888;
+        font-size: 0.95em;
+      }
+
+      @media (max-width: 600px) {
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .content {
+          padding: 20px;
+        }
+
+        .contact {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Mahdi Beyg Babaei</h1>
+        <div class="title">Software Engineer</div>
+        <div class="contact">
+          <a href="mailto:pouyababaie123@gmail.com">pouyababaie123@gmail.com</a>
+          <span>|</span>
+          <!-- <span>+(98) 930 4961 630</span>
+          <span>|</span> -->
+          <span>Tehran, Iran</span>
+          <span>|</span>
+          <a href="https://github.com/pouyababaie" target="_blank">Github</a>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <h2>Summary</h2>
+          <p class="summary">
+            Experienced Software Developer specializing in scalable, modular,
+            and high-performance Web applications. Contributor to PrimeNG,
+            enhancing UI component ecosystems. Skilled in design patterns and
+            optimization. Strong background in Frontend Development, with a
+            focus on building efficient and maintainable software solutions.
+            Passionate about innovation, clean architecture, and advancing
+            modern development practices.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Professional Experience</h2>
+
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Software Developer</div>
+              <div class="job-company">Arya-Soft</div>
+              <div class="job-date">2024 - Present</div>
+            </div>
+            <div class="job-description">
+              Led the development of a comprehensive online Point of Sale (POS)
+              system. Initially built with Angular, TypeScript, and PrimeNG,
+              later ported to Blazor and .NET MAUI using C# and MudBlazor to
+              deliver a unified codebase across web, mobile, and desktop
+              platforms. This transformation improved maintainability,
+              performance, and user experience across all devices.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Software Developer</div>
+              <div class="job-company">TopTis</div>
+              <div class="job-date">2023 - 2024</div>
+            </div>
+            <div class="job-description">
+              Maintained a large Angular monorepo powering a back-office
+              solution and B2B tourism platform. Led the transition to the ABP
+              Framework using Blazor and .NET. Contributed to the design and
+              implementation of a unified design system based on LeptonX and
+              Telerik UI for Blazor. Built shared UI and logic libraries to
+              accelerate development.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Front-End Developer</div>
+              <div class="job-company">Nogara Solutions</div>
+              <div class="job-date">2022 - 2023</div>
+            </div>
+            <div class="job-description">
+              Contributed to the development of a robust Angular platform for
+              mutual fund subscription, redemption, and back-office
+              administration. Led the implementation of a scalable design system
+              using Bootstrap CSS, PrimeNG, and AG Grid to ensure consistent and
+              responsive UI.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Front-End Developer</div>
+              <div class="job-company">Saam Webware</div>
+              <div class="job-date">2021 - 2022</div>
+            </div>
+            <div class="job-description">
+              Started as a 3-month intern and transitioned to full-time
+              developer. Contributed to several modules of an enterprise
+              resource planning (ERP) solution. Played a key role in migrating a
+              legacy AngularJS application to modern Angular 2+ architecture,
+              enhancing performance and maintainability.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Waiter / Barista</div>
+              <div class="job-date">2020 - 2021</div>
+            </div>
+            <div class="job-description">
+              Developed strong communication, multitasking, and customer service
+              skills in a busy café environment. Gained valuable experience in
+              teamwork and time management that translated well into
+              collaborative software development.
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Education</h2>
+          <div class="education-item">
+            <div class="education-title">Bachelor of Computer Science</div>
+            <div class="education-subtitle">
+              IRI Azad University | 2019 - Present
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-title">High School</div>
+            <div class="education-subtitle">
+              Dr. Moein High School | 2017 - 2019
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill">Angular</div>
+            <div class="skill">Blazor</div>
+            <div class="skill">C#</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">MAUI</div>
+            <div class="skill">Git</div>
+            <div class="skill">Docker</div>
+            <div class="skill">AI Tools</div>
+            <div class="skill">Linux</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Projects</h2>
+          <ul class="project-item">
+            <li>
+              <a target="_blank" href="aban.net" class="project-name"
+                >Aban Broker</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="aban.capital" class="project-name"
+                >Aban Capital</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="touristpanel.ir" class="project-name"
+                >Tourist Panel</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="lima.ir" class="project-name">Lima</a>
+            </li>
+            <li>
+              <a target="_blank" href="nogara.ir" class="project-name"
+                >Nogara</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
